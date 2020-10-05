@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import SearchBar from './search-bar/search-bar'
+import ImageList from './images/image-list'
 import axios from 'axios'
 import './app.css'
 
@@ -30,6 +31,7 @@ class App extends Component{
         return(
             <div className="app-container">
                 <SearchBar onSearchImages={this.onSearchImages}/>
+                <ImageList images={this.state.images}/>
             </div>
         )
     }
